@@ -3,34 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <title>Postcode Lookup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Open Sans', sans-serif;
       padding: 2em;
+      background-color: #ffffff;
+      color: #222;
       max-width: 600px;
       margin: auto;
     }
-    input {
-      padding: 0.5em;
-      width: 100%;
+
+    h2 {
+      color: #278820;
+      font-size: 1.5em;
       margin-bottom: 1em;
     }
+
+    input {
+      padding: 0.5em;
+      font-size: 1em;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 1em;
+    }
+
     button {
-      padding: 0.5em 1em;
-      background: #002d72;
+      padding: 0.6em 1.2em;
+      font-size: 1em;
+      background-color: #278820;
       color: white;
       border: none;
-      cursor: pointer;
       border-radius: 4px;
+      cursor: pointer;
     }
+
+    button:hover {
+      background-color: #1e6c18;
+    }
+
     #result {
-      margin-top: 1em;
-      font-weight: bold;
+      margin-top: 1.5em;
+      background: #9ddd91;
+      padding: 1em;
+      border-left: 4px solid #278820;
+      border-radius: 4px;
     }
   </style>
 </head>
 <body>
-  <h2>Enter your postcode:</h2>
+  <h2>Find Your Local Authority</h2>
   <input type="text" id="postcode" placeholder="e.g. WS12 2UL" />
   <button onclick="lookupPostcode()">Find Local Authority</button>
   <div id="result"></div>
