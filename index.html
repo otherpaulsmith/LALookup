@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Postcode Lookup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2em;
+      max-width: 600px;
+      margin: auto;
+    }
+    input {
+      padding: 0.5em;
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    button {
+      padding: 0.5em 1em;
+      background: #002d72;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    #result {
+      margin-top: 1em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Enter your postcode:</h2>
+  <input type="text" id="postcode" placeholder="e.g. WS12 2UL" />
+  <button onclick="lookupPostcode()">Find Local Authority</button>
+  <div id="result"></div>
+
+  <script src="lookup.js"></script>
+</body>
+</html>
